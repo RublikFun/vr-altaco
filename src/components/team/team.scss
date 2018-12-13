@@ -1,0 +1,86 @@
+.team {
+  display: flex;
+  margin: -12px;
+
+  &__item {
+    position: relative;
+    margin: 12px;
+    width: calc(33.3333% - 24px);
+
+    figure {
+      overflow: hidden;
+      height: 224px;
+    }
+
+    img {
+      display: block;
+    }
+
+    figcaption {
+      opacity: 0;
+      visibility: hidden;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      padding: 12px 16px;
+      background-color: $color-black;
+      color: $color-white;
+      transition: .3s ease;
+
+      span {
+        display: block;
+      }
+    }
+
+    &:hover {
+      figcaption {
+        opacity: 1;
+        visibility: visible;
+        bottom: 0;
+      }
+
+      .corner_tl,
+      .corner_tr,
+      .corner_bl,
+      .corner_br {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .corner_tl {
+        top: -13px;
+        left: -13px;
+      }
+
+      .corner_tr {
+        top: -13px;
+        right: -13px;
+      }
+
+      .corner_bl {
+        right: -13px;
+        bottom: -13px;
+      }
+
+      .corner_br {
+        left: -13px;
+        bottom: -13px;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .corner_tl,
+  .corner_tr,
+  .corner_bl,
+  .corner_br {
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+  }
+}

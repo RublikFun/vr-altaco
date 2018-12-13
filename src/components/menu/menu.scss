@@ -1,0 +1,39 @@
+.menu {  
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -1px;
+
+  &__item {
+    font-family: 'Helvetica Neue', sans-serif;
+    display: block;
+    padding: 6px;
+    width: calc(25% - 2px);
+    text-align: center;
+    color: $color-grey-2;
+    text-transform: uppercase;
+    background-color: $color-black;
+    font-size: 14px;
+    transition: .3s;
+
+    &_download {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $color-allert;
+      color: $color-white;
+
+      svg {
+        width: 12px;
+        height: 12px;
+        fill: $color-white;
+        transform: rotate(90deg);
+        margin-right: 15px;
+      }
+    }
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-grey-2;
+    }
+  }
+}

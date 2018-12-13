@@ -1,0 +1,26 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  
+  &__container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+
+  &__team {
+    margin-top: 35px;
+    margin-bottom: 45px;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}

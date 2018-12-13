@@ -1,0 +1,26 @@
+// Libs
+@import 'libs/animate/animate';
+@import 'libs/fancybox/jquery.fancybox';
+@import 'libs/owl-carousel2/assets/owl.carousel';
+
+// Common
+@import 'common/sass/variables';
+@import 'common/sass/functions';
+@import 'common/sass/mixins';
+@import 'common/sass/fonts';
+@import 'common/sass/normalize';
+@import 'common/sass/global';
+@import 'common/sass/typo';
+
+// Components
+@import 'components/header/header';
+@import 'components/menu/menu';
+@import 'components/lang/lang';
+@import 'components/team/team';
+@import 'components/footer/footer';
+
+// Sections 
+@import 'sections/promo/promo';
+@import 'sections/samples/samples';
+@import 'sections/gallery/gallery';
+@import 'sections/about/about';

@@ -1,0 +1,19 @@
+.lang {
+  display: flex;
+
+  &__item {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    margin-right: 6px;
+    color: $color-grey-2;
+    cursor: pointer;
+
+    &_cur {
+      color: $color-allert;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
