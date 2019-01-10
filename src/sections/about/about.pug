@@ -6,6 +6,63 @@ section.about
 
     div.about__team 
       include ../../components/team/team
-      
+
+    div.about__information
+      div.about__half
+        h2 Основная информация
+        div.about__contacts 
+          div.about__contact 
+            div.about__contact-icon
+              include ../../icons/address.html
+            div.about__contact-info
+              | г. Киев, ул. Приорская 21
+
+          div.about__contact 
+            div.about__contact-icon
+              include ../../icons/phone.html
+            div.about__contact-info
+              a(href="tel:+380442324461") +380 (44) 232 44 61 <br>
+              a(href="tel:+380961544114") +380 (96) 154 41 14
+
+          div.about__contact
+            div.about__contact-icon
+              include ../../icons/mail.html
+            div.about__contact-info
+              a(href="mailto:Info@altaco.com.ua") Info@altaco.com.ua
+
+          div.about__contact 
+            div.about__contact-icon
+              include ../../icons/fb.html
+            div.about__contact-info
+              a(href="https://facebook.com/altacostone/", target="_blank") facebook.com/altacostone
+
+          div.about__contact 
+            div.about__contact-icon
+              include ../../icons/clock.html
+            div.about__contact-info
+              | Пн-Пт 9.00-18.00 <br>
+              | Сб. 9.00 - 14.00 <br>
+              | Вс. Выходной
+
+
+
+      div.about__half
+        h2 Написать Сообщение   
+        div.about__form 
+          form(action="?")
+            div.form-group 
+              label(for="user_name") Имя
+              input#user_name(type="text", name="user_name")  
+            div.form-group 
+              label(for="user_email") Электронная почта (email)
+              input#user_email(type="email", name="user_email")  
+            div.form-group 
+              label(for="user_phone") Телефон
+              input#user_phone(type="tel", name="user_phone") 
+            div.form-group 
+              label(for="user_massage") Комментарий
+              textarea#user_massage(name="user_massage")
+            div.form-btn
+              input(type="submit", value="Отправить")
   
   include ../../components/footer/footer
