@@ -11,4 +11,5 @@ import './components/footer/footer'
 
 //Sections 
 import './sections/promo/promo'
+import './sections/gallery/gallery'
 
