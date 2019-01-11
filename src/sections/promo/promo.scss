@@ -1,4 +1,6 @@
 .promo {
+  height: 100vh;
+  min-height: 670px;
   
   &__gallery {
     @media screen and ( max-height: 768px ) {

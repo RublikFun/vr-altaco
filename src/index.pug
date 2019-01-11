@@ -6,10 +6,15 @@ html(lang='ru')
   body
   
     main
-
-      include sections/promo/promo
-      include sections/samples/samples
-      include sections/gallery/gallery
-      include sections/about/about
+      include components/pagination/pagination
+      
+      section#promo
+        include sections/promo/promo
+      section#samples
+        include sections/samples/samples
+      section#gallery
+        include sections/gallery/gallery
+      section#about
+        include sections/about/about
 
     include common/pug/scripts

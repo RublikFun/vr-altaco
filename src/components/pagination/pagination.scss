@@ -1,0 +1,40 @@
+.pagination {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  right: 60px;
+  z-index: 10;
+
+  &__elem {
+    display: block;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      background-color: $color-grey-2;
+      transition: .3s;
+
+      &.active {
+        box-shadow: 0 0 0 2px $color-allert;
+        background-color: transparent;
+      }
+    }
+
+    &:hover {
+      a {
+        box-shadow: 0 0 0 2px $color-allert;
+        background-color: transparent;
+      }
+    }
+  }
+}

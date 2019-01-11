@@ -3,12 +3,11 @@ import './libs/owl-carousel2/owl.carousel';
 import './libs/fancybox/jquery.fancybox';
 
 // Common
-import './common/js/global.js';
-import './common/js/gallery.js';
-import './common/js/inputmask.js';
+import './common/js/global';
+import './common/js/gallery';
 
 //Components
-import './components/sample/sample'
+import './components/pagination/pagination'
 import './components/footer/footer'
 
 //Sections 
