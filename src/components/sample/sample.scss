@@ -1,0 +1,71 @@
+.sample {
+  display: block;
+  position: relative;
+  height: 136px; 
+
+  figure {
+    position: relative;
+    height: 100%;
+
+    figcaption {
+      position: absolute;
+      text-align: center;
+      font-size: 18px;
+      padding: 12px;
+      text-transform: uppercase;
+      color: $color-black;
+      background-color: $color-white;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s;
+    }
+  }
+
+  &:hover {
+    figcaption {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .corner_tl,
+    .corner_tr,
+    .corner_bl,
+    .corner_br {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .corner_tl {
+      top: -13px;
+      left: -13px;
+    }
+
+    .corner_tr {
+      top: -13px;
+      right: -13px;
+    }
+
+    .corner_bl {
+      right: -13px;
+      bottom: -13px;
+    }
+
+    .corner_br {
+      left: -13px;
+      bottom: -13px;
+    }
+  }
+  
+  .corner_tl,
+  .corner_tr,
+  .corner_bl,
+  .corner_br {
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+  }
+}

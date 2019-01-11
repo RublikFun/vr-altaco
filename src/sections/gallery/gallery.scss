@@ -47,9 +47,9 @@
     figure {
       height: 70.6vh;
 
-      img {
+      // img {
 
-      }
+      // }
 
       figcaption {
         position: absolute;
@@ -106,6 +106,18 @@
           fill: $color-white;
         }
       }
-    }    
+    } 
+    
+    .owl-prev {
+      svg {
+        margin-left: -3px;
+      }
+    }
+
+    .owl-next {
+      svg {
+        margin-right: -3px;
+      }
+    }
   }
 }

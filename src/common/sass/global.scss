@@ -97,3 +97,99 @@ section {
   border-top: 0;
   border-right: 0;
 }
+
+// Fancy
+.fancy-altaco {
+  .fancybox-stage {
+    width: auto;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .fancybox-content {
+    margin-bottom: 0 !important;
+  }  
+
+  .fancybox-caption {    
+    margin: 0 50px;
+    background-color: $color-white;
+    color: $color-black;
+
+    h5 {
+      font-family: $font-family-base;
+      margin-top: 0;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: normal;
+      margin-bottom: 5px;
+    }
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+  .fancybox-toolbar {
+    top: 50%;
+    left: 50%;
+    width: 26px;
+    height: 26px;
+    margin-top: -13px;
+    margin-left: -13px;
+  } 
+
+  .fancybox-button--close {
+    width: 26px;
+    height: 26px;
+    border: 2px solid $color-allert;
+    padding: 0;
+    background-color: transparent;
+    color: $color-allert;
+
+    svg {
+      fill: $color-allert;
+    }
+  }
+
+  .fancybox-button--arrow_left,
+  .fancybox-button--arrow_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    top: calc(50% - 12px);
+    border-radius: 24px;
+    cursor: pointer;
+    transition: .3s;
+
+    svg {
+      fill: $color-grey-2;
+      width: 15px;
+      height: 15px;
+    }
+
+    &:hover {
+      background-color: $color-allert;
+
+      svg {
+        fill: $color-white;
+      }
+    }
+  }
+
+  .fancybox-button--arrow_left {
+    svg {
+      margin-left: -3px;
+    }
+  }
+
+  .fancybox-button--arrow_right {
+    svg {
+      margin-right: -3px;
+    }
+  }
+}

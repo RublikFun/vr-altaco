@@ -4,9 +4,11 @@ import './libs/fancybox/jquery.fancybox';
 
 // Common
 import './common/js/global.js';
+import './common/js/gallery.js';
 import './common/js/inputmask.js';
 
 //Components
+import './components/sample/sample'
 import './components/footer/footer'
 
 //Sections 

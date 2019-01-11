@@ -1,0 +1,9 @@
+mixin sample(img, title, description)
+  a.sample(href=imgUrl+"goods/"+img, data-fancybox="images", data-caption="<h5>"+title+"</h5><p>"+description+"</p>")
+    span.corner_tl
+    span.corner_tr
+    span.corner_bl
+    span.corner_br
+    figure 
+      img(src=imgUrl+"goods/"+img, alt=title)
+      figcaption= title
