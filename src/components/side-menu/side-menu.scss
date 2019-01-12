@@ -1,10 +1,26 @@
 .side-menu {
+  @media screen and ( max-width: 1024px ) {
+    top: 25px;
+    right: 20px;
+  }
+  @media screen and ( max-width: 768px ) {
+    right: 11px;
+
+    &_active {
+      background-color: rgba($color-white, .8);
+      box-shadow: 0 0 0 7px rgba($color-white, .8);
+    }
+  }
   position: fixed;
   top: 60px;
   right: 60px;  
-  z-index: 10;
+  z-index: 11;
 
   &__burger {
+    @media screen and ( max-width: 768px ) {
+      width: 18px;
+      height: 18px;
+    }
     display: block;
     width: 14px;
     height: 14px;
@@ -25,6 +41,9 @@
   }
 
   &__item {
+    @media screen and ( max-width: 768px ) {
+      color: $color-black;
+    }
     font-family: 'Helvetica Neue', sans-serif;
     text-transform: uppercase;
     display: block;

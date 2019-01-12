@@ -1,8 +1,20 @@
 .team {
+  @media screen and ( max-width: 768px ) {
+    display: block;
+    margin: 0;
+  }
   display: flex;
   margin: -12px;
 
   &__item {
+    @media screen and ( max-width: 768px ) {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     position: relative;
     margin: 12px;
     width: calc(33.3333% - 24px);

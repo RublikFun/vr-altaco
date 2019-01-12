@@ -4,6 +4,9 @@
   min-height: 100vh;
   
   &__container {
+    @media screen and ( max-width: 768px ) {
+      padding: 25px 40px;
+    }
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -22,12 +25,25 @@
   }
 
   &__information {
+    @media screen and ( max-width: 768px ) {
+      display: block;
+      margin: 0;
+    }
     display: flex;
     margin: -36px;
     overflow: hidden;
   }
 
   &__half {
+    @media screen and ( max-width: 768px ) {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     width: 50%;
     padding: 36px;
 

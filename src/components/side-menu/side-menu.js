@@ -6,6 +6,7 @@ function sideMenu() {
 
   const showHide = function() {
     menu.stop().slideToggle('fast');
+    wrap.toggleClass("side-menu_active");
   };
 
   burger.click(showHide); 
