@@ -8,6 +8,7 @@ import './common/js/gallery';
 
 //Components
 import './components/pagination/pagination'
+import './components/next/next'
 import './components/footer/footer'
 
 //Sections 
