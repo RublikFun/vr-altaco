@@ -6,7 +6,7 @@ function pagination () {
       var target = $(this).attr("href"); 
       
       $('html, body').stop().animate({
-        scrollTop: $(target).offset().top
+        scrollTop: $(target).offset().top + 2
       }, 600, function () {
         location.hash = target; 
       });
