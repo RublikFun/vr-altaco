@@ -13,6 +13,12 @@ function next () {
           elem.stop().fadeOut('fast');
         } else {
           elem.stop().fadeIn('fast').attr('href', nextSection);
+        }  
+
+        if ($(this).attr('id') == 'promo') {
+          $('.side-menu').stop().fadeOut('fast');
+        } else {
+          $('.side-menu').stop().fadeIn('fast');
         }        
       }      
     });

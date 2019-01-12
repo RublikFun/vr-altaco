@@ -7,6 +7,7 @@ import './common/js/global';
 import './common/js/gallery';
 
 //Components
+import './components/side-menu/side-menu'
 import './components/pagination/pagination'
 import './components/next/next'
 import './components/footer/footer'
