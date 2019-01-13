@@ -99,12 +99,11 @@ main {
 }
 
 // Fancy
-.fancy-altaco {
-  @media screen and ( max-width: 768px ) {
-    .fancybox-slide--image {
-      padding-top: 0;
-    }
+.fancy-altaco {   
+  .fancybox-slide--image {
+    padding-top: 0;
   }
+  
   .fancybox-stage {
     width: auto;
     max-width: 820px;

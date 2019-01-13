@@ -50,20 +50,24 @@ div.about
       div.about__half(data-aos='fade-up', data-aos-delay='700')
         h2 Написать Сообщение   
         div.about__form 
-          form(action="?")
+          form(method="post", id="ajax_form")
             div.form-group 
               label(for="user_name") Имя
-              input#user_name(type="text", name="user_name")  
+              input#user_name(type="text", name="field[name]", required)  
             div.form-group 
               label(for="user_email") Электронная почта (email)
-              input#user_email(type="email", name="user_email")  
+              input#user_email(type="email", name="field[email]", required)  
             div.form-group 
               label(for="user_phone") Телефон
-              input#user_phone(type="tel", name="user_phone") 
+              input#user_phone(type="tel", name="field[phone]", required) 
             div.form-group 
               label(for="user_massage") Комментарий
-              textarea#user_massage(name="user_massage")
+              textarea#user_massage(name="field[message]", required)
             div.form-btn
               input(type="submit", value="Отправить")
-  
+          div#result_success.about__form-success 
+            h3 Спасибо!
+            br
+            p Ваш запрос отправлен. Мы ответим вам в ближайшее время.
+          //- div#result_error.about__form-error Одно или несколько полей не заполнены.
   include ../../components/footer/footer

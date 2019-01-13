@@ -92,6 +92,20 @@
     }
   }
 
+  &__form {
+    &-success,
+    &-error {
+      display: none;
+    }
+
+    &-success {
+      color: $color-green;
+    }
+    &-error {
+      color: $color-allert;
+    }
+  }
+
   footer {
     margin-top: auto;
   }

@@ -151,6 +151,8 @@ input {
   &[type='email'],
   &[type='number'],
   &[type='url'] {
+    font-family: $font-family-base;
+    padding: 0 10px;
     line-height: 30px;
     height: 30px;
     border: 1px solid $color-border;
@@ -170,8 +172,10 @@ input {
 }
 
 textarea {
+  font-family: $font-family-base;
   display: block;
   width: 100%;
+  padding: 10px;
   height: 75px;
   border: 1px solid $color-border;
   resize: none;
