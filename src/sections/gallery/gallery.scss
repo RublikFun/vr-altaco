@@ -19,7 +19,8 @@
         bottom: -45px;
       }
       @media screen and ( max-width: 768px ) {
-        bottom: -35px;
+        // bottom: -35px;
+        display: none;
       }
       position: absolute;
       width: 100%;
