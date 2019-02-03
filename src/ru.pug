@@ -1,22 +1,22 @@
 include common/pug/variables
 
 doctype html
-html(lang='eng')
+html(lang='ru')
   include common/pug/head
   body
   
     main
-      include components/side-menu/side-menu
+      include components/side-menu/side-menu-ru
       include components/pagination/pagination
       include components/next/next
 
       section#promo
-        include sections/promo/promo
+        include sections/promo/promo-ru
       section#samples
-        include sections/samples/samples
+        include sections/samples/samples-ru
       section#gallery
-        include sections/gallery/gallery
+        include sections/gallery/gallery-ru
       section#about
-        include sections/about/about
+        include sections/about/about-ru
 
     include common/pug/scripts

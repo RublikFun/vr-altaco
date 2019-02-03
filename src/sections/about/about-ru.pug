@@ -1,0 +1,73 @@
+div.about
+  div.container.about__container
+    div(data-aos='fade-up', data-aos-delay='200')
+      h2 О КОМПАНИИ
+      p Мир вокруг нас постоянно меняется, каждый день появляются новые технологии и новые возможности, все больше информации в свободном доступе. День за днём развивается искусство. Музыка, проза, изобразительное искусство, дизайн, архитектура, начавшись с простых и доступных форм, они прошли много этапов развития от классической эпохи до импрессионизма и сейчас вернулись к максимально практичным решениям. Со временем ты начинаешь понимать что настоящая красота не в излишествах и помпезности и ищешь способы самовыражения от которых ты не устанешь завтра. Хочешь стать лучшим в своей сфере и отбрасываешь лишнее - так и появилась коллекция Altaco “Monochrome” которая сегодня и является основой нашего шоурума. 
+      p Конечно мы работаем и с другими цветами, но “Monochrome” - воплощение Altaco. Мы за минимализм и уверены что чистота белого, разнообразие оттенков серого и строгость чёрного это основа, а все остальное - акценты.
+
+    div.about__team 
+      include ../../components/team/team-ru
+
+    div.about__information
+      div.about__half(data-aos='fade-up', data-aos-delay='600')
+        h2 Основная информация
+        div.about__contacts 
+          div.about__contact 
+            div.about__contact-icon
+              include ../../icons/address.html
+            div.about__contact-info
+              | г. Киев, ул. Приорская 21
+
+          div.about__contact
+            div.about__contact-icon
+              include ../../icons/phone.html
+            div.about__contact-info
+              a(href="tel:+380442324461") +380 (44) 232 44 61 <br>
+              a(href="tel:+380961544114") +380 (96) 154 41 14
+
+          div.about__contact
+            div.about__contact-icon
+              include ../../icons/mail.html
+            div.about__contact-info
+              a(href="mailto:Info@altaco.com.ua") Info@altaco.com.ua
+
+          div.about__contact 
+            div.about__contact-icon
+              include ../../icons/fb.html
+            div.about__contact-info
+              a(href="https://facebook.com/altacostone/", target="_blank") facebook.com/altacostone
+
+          div.about__contact 
+            div.about__contact-icon
+              include ../../icons/clock.html
+            div.about__contact-info
+              | Пн-Пт 9.00-18.00 <br>
+              | Сб. 9.00 - 14.00 <br>
+              | Вс. Выходной
+
+
+
+      div.about__half(data-aos='fade-up', data-aos-delay='700')
+        h2 Написать Сообщение   
+        div.about__form 
+          form(method="post", id="ajax_form", action="_post.php")
+            div.form-group 
+              label(for="user_name") Имя
+              input#user_name(type="text", name="field[name]", required)  
+            div.form-group 
+              label(for="user_email") Электронная почта (email)
+              input#user_email(type="email", name="field[email]", required)  
+            div.form-group 
+              label(for="user_phone") Телефон
+              input#user_phone(type="tel", name="field[phone]", required) 
+            div.form-group 
+              label(for="user_massage") Комментарий
+              textarea#user_massage(name="field[message]", required)
+            div.form-btn
+              input(type="submit", value="Отправить")
+          div#result_success.about__form-success 
+            h3 Спасибо!
+            br
+            p Ваш запрос отправлен. Мы ответим вам в ближайшее время.
+          //- div#result_error.about__form-error Одно или несколько полей не заполнены.
+  include ../../components/footer/footer-ru
