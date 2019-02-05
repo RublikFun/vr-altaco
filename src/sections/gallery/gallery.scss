@@ -102,10 +102,7 @@
     z-index: 1;
 
     .owl-prev,
-    .owl-next {
-      @media screen and ( max-width: 768px ) {
-        background-color: $color-allert;
-      }
+    .owl-next {      
       display: flex;
       align-items: center;
       justify-content: center;
