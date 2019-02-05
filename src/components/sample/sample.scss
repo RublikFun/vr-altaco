@@ -25,7 +25,8 @@
     }
   }
 
-  &:hover {
+  // &:hover,
+  &.active {
     figcaption {
       opacity: 1;
       visibility: visible;

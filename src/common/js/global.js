@@ -8,3 +8,26 @@ $('a[data-scroll]').on('click', function (event) {
     }, 1000);
   }
 });
+
+window.projectHover = function (wrapper, elem) {
+  const parent = $(wrapper);
+
+  const show = function () {
+    const a = $(this).find(elem);
+
+    a.addClass('active');
+  };
+  const hide = function () {
+    const a = $(this).find(elem);
+
+    a.removeClass('active');
+  };
+
+  parent.mouseover(show);
+  parent.mouseleave(hide);
+};
+
+$(document).ready(function () {
+  projectHover('.samples__item', '.sample');
+});
+
