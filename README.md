@@ -1,4 +1,4 @@
-# Daviann 2018
+# Altaco (http://www.altaco.com.ua/)
 
 ![Logo](http://static.daviann.com/daviann.png)
 
