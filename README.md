@@ -1,7 +1,5 @@
 # Altaco (http://www.altaco.com.ua/)
 
-![Logo](http://static.daviann.com/daviann.png)
-
 * __npm install__
 * __gulp__ - run dev environment
 * __gulp build__ - build, same as _gulp_ but without runing dev server
